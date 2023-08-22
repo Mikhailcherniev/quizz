@@ -8,13 +8,13 @@ const restartButton = document.getElementById('restart-button');
 const questions = [
   {
     question: 'Qual é a fórmula química da água?',
-    image: 'ciencia.png',  // Substitua pelo nome da imagem
+    image: 'ciencia.png',
     options: ['H2O', 'CO2', 'NaCl', 'C6H12O6'],
     answer: 0
   },
   {
     question: 'Quem foi o autor da obra "Dom Casmurro"?',
-    image: 'machado.png',  // Substitua pelo nome da imagem
+    image: 'machado.png',
     options: ['Machado de Assis', 'José de Alencar', 'Eça de Queirós', 'Lima Barreto'],
     answer: 0
   },
@@ -28,20 +28,20 @@ const questions = [
 
   {
     question: 'quantos presidentes o reino unido já teve?',
-    image: 'ReinoUnido.jpg',  // Substitua pelo nome da imagem
+    image: 'ReinoUnido.jpg',
     options: ['1', '4', '24', '0'],
     answer: 3
   },
-  
+
   {
     question: 'Em qual periodo ocorreu a guerra fria?',
-    image: 'guerraFria.jpg',  // Substitua pelo nome da imagem
+    image: 'guerraFria.jpg',
     options: ['1930-2020', '1919-1945', '1945-1991', '2010-hoje'],
     answer: 2
   },
-  
-  
-  
+
+
+
 ];
 
 let currentQuestionIndex = 0;
@@ -68,16 +68,16 @@ function showQuestion() {
 
   resultElement.textContent = '';
 }
+
 function showResultImage(score) {
-    if (score >= 21) {
-      scoreImageElement.innerHTML = '<img src="porco.png" alt="Imagem 2">';
-    } else if (score > 20) {
-      scoreImageElement.innerHTML = '<img src="lula.jpg" alt="Imagem 1">';
-    } else {
-      scoreImageElement.innerHTML = '';
-    }
-    scoreImageElement.style.display = 'block';
+  if (score >= 20) {
+    scoreImageElement.innerHTML = '<img src="porco.png" alt="Pontuação Alta">';
+  } else {
+    scoreImageElement.innerHTML = '<img src="lula.jpg" alt="Pontuação Baixa">';
   }
+  scoreImageElement.style.display = 'block';
+}
+
 
 function checkAnswer(selectedOption) {
   const correctAnswer = questions[currentQuestionIndex].answer;

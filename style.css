@@ -38,11 +38,13 @@ body {
   }
   
   
-  #options img {
-    width: auto;
-    height: 200px;
-    margin: 10px 0;
-  }
+  #options img,
+#restart-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+  
   
   .option-button {
     margin: 5px;
@@ -74,6 +76,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 5px 0;
+  }
+
+  #restart-image-container {
+    margin-top: 20px;
   }
 
   .titullou{
