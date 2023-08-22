@@ -39,9 +39,9 @@ body {
   
   
   #options img,
-#restart-image {
-  max-width: 100%;
-  height: auto;
+ {
+  width:400px ;
+  height: 100px;
   margin: 10px 0;
 }
   

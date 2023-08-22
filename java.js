@@ -27,11 +27,12 @@ const questions = [
   },
 
   {
-    question: 'quantos presidentes o reino unido já teve?',
-    image: 'ReinoUnido.jpg',
-    options: ['1', '4', '24', '0'],
+    question: 'quantos presidentesteve a inglaterra?',
+    image: 'reinoUnido.jpg',
+    options: ['10', '25', '40', '0'],
     answer: 3
   },
+
 
   {
     question: 'Em qual periodo ocorreu a guerra fria?',
@@ -39,6 +40,7 @@ const questions = [
     options: ['1930-2020', '1919-1945', '1945-1991', '2010-hoje'],
     answer: 2
   },
+
 
 
 
